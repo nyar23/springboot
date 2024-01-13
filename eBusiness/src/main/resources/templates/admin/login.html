@@ -4,6 +4,78 @@
 <meta charset="UTF-8">
 <title>管理员登录页面</title>
 <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+	<style>
+		button{
+			background-color:dodgerblue;
+			color:white;
+			width: 80px;
+			height: 47px;
+			border:0;
+			font-size: 16px;
+			border-radius: 30px;
+			margin-right: 30px;
+			margin-bottom: 20px;
+		}
+
+
+
+		.css-4a0g8t {
+			background: rgb(248, 248, 248);
+			padding: 70px 0px 60px;
+		}
+		.css-1xlndbl {
+			font-family: PingFangSC-Semibold;
+			font-size: 40px;
+			color: rgb(0, 0, 0);
+			text-align: center;
+			line-height: 40px;
+		}
+		.css-m6eyow {
+			font-family: PingFangSC-Medium;
+			font-size: 20px;
+			color: rgb(18, 25, 36);
+			text-align: center;
+			line-height: 20px;
+			width: 80px;
+			margin-right: 100px;
+		}
+
+		.css-1s7agxy {
+			width: 1000px;
+			display: flex;
+			flex-wrap: nowrap;
+			background: rgb(255, 255, 255);
+			box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 30px 0px;
+			border-radius: 21px;
+			margin: 40px auto 0px;
+			padding: 40px 100px;
+			box-sizing: border-box;
+		}
+
+		.containers {
+			position: absolute;
+			top: 50px;
+			right: 200px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 20px;
+		}
+
+		.logo {
+			width: 100px;
+			height: 100px;
+		}
+
+		.platform-name {
+			font-size: 60px;
+			font-weight: bold;
+			margin-left: 10px;
+			font-family: STXingkai;
+
+		}
+
+	</style>
 <body>
 	<div class="container">
 	  	<div class="bg-primary"  style="width:70%; height: 60px;padding-top: 1px;">
@@ -33,9 +105,9 @@
 			
 			<div class="form-group">
 				<div class="col-sm-offset-2 col-sm-10">
-					<button type="submit"class="btn btn-success" >登录</button>
-					<button type="reset" class="btn btn-primary" >重置</button>
-					<div><small>点错了？</small><a th:href="@{/}">回首页</a></div>
+					<button type="submit"class="button" >登录</button>
+					<button type="reset" class="button" >重置</button>
+					<div><small>点错了？</small><a th:href="@{/}">去首页</a></div>
 				</div>
 			</div>
 			
