@@ -35,6 +35,17 @@ public class UserController {
 	    }
 		return userService.login(bUser, session, model);
 	}
+//	cj
+	@RequestMapping("/cj1")
+	public String cj1(@ModelAttribute("bUser") BUser bUser) {
+		//@ModelAttribute("bUser")与th:object="${bUser}"相对应
+		return "user/cj1";
+	}
+	@RequestMapping("/cj2")
+	public String cj2(@ModelAttribute("bUser") BUser bUser) {
+		//@ModelAttribute("bUser")与th:object="${bUser}"相对应
+		return "user/cj2";
+	}
 	@RequestMapping("/isUse")
 	@ResponseBody
 	public String isUse(@RequestBody BUser bUser) {

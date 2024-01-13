@@ -16,6 +16,17 @@ public class BUser {
 	private String bpwd;
 	private String rebpwd;
 	private String code;
+
+	private String username;
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
 	public Integer getId() {
 		return id;
 	}

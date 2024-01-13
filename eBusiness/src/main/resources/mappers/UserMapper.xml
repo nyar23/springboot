@@ -7,7 +7,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		select * from busertable where bemail = #{bemail}
 	</select>
 	<insert id="register" parameterType="BUser">
-		insert into busertable (id, bemail, bpwd, phone)  values(null, #{bemail}, #{bpwd},#{phone})
+		insert into busertable (id, bemail, bpwd, phone,username)  values(null, #{bemail}, #{bpwd},#{phone},#{username})
 	</insert>
 	<select id="login" parameterType="BUser" resultType="BUser">
 		select * from busertable where bemail = #{bemail} and bpwd = #{bpwd}

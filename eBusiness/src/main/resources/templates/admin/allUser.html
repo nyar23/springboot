@@ -55,12 +55,14 @@
 						<tbody class="text-center">
 							<tr>
 								<th>用户ID</th>
+								<th>用户名</th>
 								<th>用户邮箱</th>
 								<th>电话号码</th>
 								<th>删除</th>
 							</tr>
 							<tr th:each="u:${allUsers}">
 								<td th:text="${u.id}"></td>
+								<td th:text="${u.username}"></td>
 								<td th:text="${u.bemail}"></td>
 								<td th:text="${u.phone}"></td>
 								<td>

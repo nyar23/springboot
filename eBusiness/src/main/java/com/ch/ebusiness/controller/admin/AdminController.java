@@ -2,6 +2,7 @@ package com.ch.ebusiness.controller.admin;
 
 import javax.servlet.http.HttpSession;
 
+import com.ch.ebusiness.entity.BUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -23,5 +24,10 @@ public class AdminController {
 	@RequestMapping("/login")
 	public String login(@ModelAttribute("aUser") AUser aUser, HttpSession session, Model model) {
 		return adminService.login(aUser, session, model);
+	}
+	@RequestMapping("/BloginOut")
+	public String BloginOut(@ModelAttribute("bUser") BUser bUser, HttpSession session) {
+		session.invalidate();
+		return "redirect:http://localhost:8080/eBusiness/";
 	}
 }
